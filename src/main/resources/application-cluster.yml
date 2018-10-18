@@ -1,0 +1,9 @@
+spring:
+  redis:
+    cluster:
+      nodes: localhost:6379
+  cache:
+    type: redis
+    cache-names: people
+    redis:
+      time-to-live: 600000
